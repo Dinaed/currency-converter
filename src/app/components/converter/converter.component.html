@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="elem">
+    <input class="input-number" type="number" [(ngModel)] = "firstCurrensy" (change)="calcCurrency1()">
+    <select name="currency" [(ngModel)] = "firstSelect" >
+      <ng-container *ngFor="let value of currency; let i = index">
+        <option [ngValue]="value.rate">{{value.cc}}</option>
+      </ng-container>
+    </select>
+  </div>
+  <div class="elem">
+    <input class="input-number" type="number" [(ngModel)] = "secondCurrensy" (change)="calcCurrency2()">
+    <select name="currency" [(ngModel)] = "secondSelect">
+      <ng-container *ngFor="let value of currency">
+        <option [ngValue]="value.rate">{{value.cc}}</option>
+      </ng-container>
+    </select>
+  </div>
+</div>

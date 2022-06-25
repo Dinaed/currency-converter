@@ -1,0 +1,28 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.elem{
+  display: flex;
+  gap: 5px;
+}
+.input-number {
+	background-color: #eee;
+	vertical-align: top;
+	outline: none;
+	padding: 0;
+	height: 40px;
+	line-height: 40px;    
+	text-indent: 10px;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	font-size: 14px;
+	border-radius: 3px;
+} 
+.input-number:focus {
+	outline: 2px solid blue;
+}

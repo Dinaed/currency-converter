@@ -1,0 +1,10 @@
+<div class="container">
+  <ul *ngFor="let value of currency" class="currensy-list">
+    <li class="currency-item">
+      <span>Название: {{value.txt}}</span>
+      <span>Курс: {{value.rate}}</span>
+      <span>Аббревиатура: {{value.cc}}</span>
+      <span>Дата обновления: {{value.exchangedate}}</span>
+    </li>
+  </ul>
+</div>
